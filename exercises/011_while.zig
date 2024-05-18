@@ -18,10 +18,11 @@
 const std = @import("std");
 
 pub fn main() void {
+    const loopend: u11 = 1024;
     var n: u32 = 2;
 
     // Please use a condition that is true UNTIL "n" reaches 1024:
-    while (???) {
+    while (n < loopend) {
         // Print the current number
         std.debug.print("{} ", .{n});
 
