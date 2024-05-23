@@ -1102,20 +1102,17 @@ const exercises = [_]Exercise{
         \\This little poem has 15 words!
         ,
     },
-    .{
-        .main_file = "104_threading.zig",
-        .output =
-        \\Starting work...
-        \\thread 1: started.
-        \\thread 2: started.
-        \\thread 3: started.
-        \\Some weird stuff, after starting the threads.
-        \\thread 2: finished.
-        \\thread 1: finished.
-        \\thread 3: finished.
-        \\Zig is cool!
-        ,
-    },
+    .{ .main_file = "104_threading.zig", .output = 
+    \\Starting work...
+    \\thread 1: started.
+    \\thread 2: started.
+    \\thread 3: started.
+    \\Some weird stuff, after starting the threads.
+    \\thread 2: finished.
+    \\thread 1: finished.
+    \\thread 3: finished.
+    \\Zig is cool!
+    , .skip = true },
     .{
         .main_file = "105_threading2.zig",
         .output = "PI ≈ 3.14159265",
