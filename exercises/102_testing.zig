@@ -67,7 +67,6 @@ test "add" {
     // And a floating point operation:
     try testing.expect(add(1.5, 1.5) == 3);
 }
-
 // Another simple function
 // that returns the result
 // of subtracting the two
